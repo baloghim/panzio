@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="sajat.css">
     <title>Balaton Panzió</title>
+    <script src="program.js"></script>
 </head>
 <body>
 
@@ -18,15 +19,15 @@
         <div class="w-75 m-auto">
         <form>
 
-            <table class="table">
+            <table class="table form-group">
                 <tr>
                     <td>
                         <p>Érkezés dátuma:</p>
                         <p>Távozás dátuma:</p>
                     </td>
                     <td>
-                        <p><input type='date' id="Erkezes"></p>
-                        <p><input type='date' id="Tavozas"></p>
+                        <p><input type='date' id="Erkezes" class="form-control"></p>
+                        <p><input type='date' id="Tavozas" class="form-control"></p>
                     </td>
                 </tr>
                 <tr>
@@ -47,15 +48,15 @@
                     </td>
                     <td>
                         <p>
-                            <select>
+                            <select class="form-control w-25">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
                             </select>
-                             fő
+                     
                         </p>
-                        <p>
+                        <p> 
                             <input type="number" maxlength="3" style="width: 6ch;"> év
                             <input type="number" maxlength="3" style="width: 6ch;"> év
                             <input type="number" maxlength="3" style="width: 6ch;"> év
@@ -89,15 +90,14 @@
                         <p>Egyéb kérdés, kívánság:</p>
                     </td>
                     <td>
-                        <textarea cols=40 rows=5></textarea>
+                        <textarea cols=40 rows=5 class="form-control"></textarea>
                     </td>
                 </tr>
             </table>
 
-
-
-        
-            
+            <div class="text-center py-5"> 
+            <input type='submit' value="Költségkalkuláció" class="btn btn-primary"> 
+            </div>
 
         </form>
         </div>
