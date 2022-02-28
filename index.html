@@ -4,15 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sajat.css">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="sajat.css">
     <title>Balaton Panzió</title>
 </head>
 <body>
 
     <div class="container">
 
+        <div class="display-4 text-center py-5">Balaton Panzió - Szobafoglalás</div>
 
+        <div class="w-75 m-auto">
+        <form>
+
+            <table class="table">
+                <tr>
+                    <td>
+                        <p>Érkezés dátuma:</p>
+                        <p>Távozás dátuma:</p>
+                    </td>
+                    <td>
+                        <p><input type='date' id="Erkezes"></p>
+                        <p><input type='date' id="Tavozas"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        Szoba típusa:   
+                    </td>
+                    <td>
+                        <p><input type='radio' name='szoba'> Egyágyas - 9000 Ft/éj</p>
+                        <p><input type='radio' name='szoba'> Kétágyas - 15000 Ft/éj</p>
+                        <p><input type='radio' name='szoba'> Kétágyas 1 pótággyal - 18000 Ft/éj</p>
+                        <p><input type='radio' name='szoba'> Kétágyas 2 pótággyal - 21000 Ft/éj</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle">
+                        <p>Vendégek száma:</p>
+                        <p>Vendégek életkora:</p>
+                    </td>
+                    <td>
+                        <p>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                             fő
+                        </p>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+
+
+        
+            
+
+        </form>
+        </div>
 
     </div>
 
