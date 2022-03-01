@@ -38,13 +38,27 @@ var NapokSzama = Elteltido /( 1000 * 3600 * 24 );
 
     // Vendégek száma
 
-    
+    var VendegekSzama=0;
+
+    VendegekSzama=document.getElementById("vendegszam").value;
+
+    // Életkorok
+
+    var Eletkorok = [];
+
+    for(var i=1; i<5; i++)
+    {
+        if(document.getElementById("e"+i).value!="")
+        {
+            Eletkorok.push(document.getElementById("e"+i).value);
+        }
+    }
+
+    // 
 
 
 
-
-
-    alert(SzobarAr);
+    alert(Eletkorok);
 
 
 }
