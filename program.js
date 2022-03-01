@@ -94,13 +94,14 @@ var NapokSzama = Elteltido /( 1000 * 3600 * 24 );
 
         if(document.getElementById("teljes").checked==true)
         {
-            furdo+=2000;
+            furdo=2000;
         }
 
         // Egyéb
 
+        var egyebek =document.getElementById("egyeb").value;
 
-    alert(furdo);
+    
 
 
 }
