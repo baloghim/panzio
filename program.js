@@ -54,11 +54,53 @@ var NapokSzama = Elteltido /( 1000 * 3600 * 24 );
         }
     }
 
-    // 
+    // Ellátás 
+
+    var Ellatas=0;
+
+    if(document.getElementById("reggeli").checked==true)
+    {
+        Ellatas=900;
+    }
+
+    if(document.getElementById("felpanzio").checked==true)
+    {
+        Ellatas=2900;
+    }
+
+    if(document.getElementById("teljespanzio").checked==true)
+    {
+        Ellatas=4900;
+    }
+
+        // Fürdő szolgáltatások
+
+        var furdo=0;
+
+        if(document.getElementById("belteri").checked==true)
+        {
+            furdo+=800;
+        }
+    
+        if(document.getElementById("kulteri").checked==true)
+        {
+            furdo+=800;
+        }
+    
+        if(document.getElementById("szauna").checked==true)
+        {
+            furdo+=800;
+        }
+
+        if(document.getElementById("teljes").checked==true)
+        {
+            furdo+=2000;
+        }
+
+        // Egyéb
 
 
-
-    alert(Eletkorok);
+    alert(furdo);
 
 
 }
