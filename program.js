@@ -115,6 +115,10 @@ function kalkulacio()
     }
 
     
+    // Egyéb
+
+
+    var egyebek = document.getElementById("egyeb").value;
 
 
 
