@@ -90,8 +90,31 @@ function kalkulacio()
     }
 
 
+    // Fürdő szolgáltatások
 
+    var furdo=0;
 
+    if(document.getElementById("belteri").checked==true)
+    {
+        furdo+=800;
+    }
+
+    if(document.getElementById("kulteri").checked==true)
+    {
+        furdo+=800;
+    }
+    
+    if(document.getElementById("szauna").checked==true)
+    {
+        furdo+=800;
+    }
+
+    if(document.getElementById("teljes").checked==true)
+    {
+        furdo+=2000;
+    }
+
+    
 
 
 
