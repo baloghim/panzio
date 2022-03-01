@@ -48,4 +48,27 @@ function kalkulacio()
   // Vendégek száma
 
 
+  var VendegekSzama =0;
+
+  VendegekSzama=document.getElementById("vendegszam").value;
+
+
+
+ // Vendégek életkora
+
+  var Eletkorok = [];
+
+    for(var i=1; i<5; i++)
+    {       
+        if(isNaN("e"+i))
+        {
+            Eletkorok.push(document.getElementById("e"+i).value);
+        }    
+              
+    }
+    
+    
+    // alert(Eletkorok);
+
+
 }
