@@ -68,7 +68,35 @@ function kalkulacio()
     }
     
     
-    // alert(Eletkorok);
+    // Ellátás
+
+    var Ellatas=0;
+
+    if(document.getElementById("reggeli").checked==true)
+    {
+        Ellatas=900;
+    }
+
+
+    if(document.getElementById("felpanzio").checked==true)
+    {
+        Ellatas=2900;
+    }
+
+
+    if(document.getElementById("teljespanzio").checked==true)
+    {
+        Ellatas=4900;
+    }
+
+
+
+
+
+
+
+
+
 
 
 }
