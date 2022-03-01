@@ -12,11 +12,39 @@ var Elteltido =TavDatum.getTime()-ErkDatum.getTime();
 
 var NapokSzama = Elteltido /( 1000 * 3600 * 24 );
 
+    // Szoba típusa
+
+    var SzobarAr=0;
+
+    if(document.getElementById("EgyAgy").checked==true)
+    {
+        SzobarAr=9000;
+    }
+
+    if(document.getElementById("KetAgy").checked==true)
+    {
+        SzobarAr=15000;
+    }
+
+    if(document.getElementById("KetAgy1p").checked==true)
+    {
+        SzobarAr=18000;
+    }
+
+    if(document.getElementById("KetAgy2p").checked==true)
+    {
+        SzobarAr=21000;
+    }
+
+    // Vendégek száma
+
+    
 
 
 
 
 
+    alert(SzobarAr);
 
 
 }
