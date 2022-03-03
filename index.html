@@ -11,7 +11,7 @@
 </head>
 <body onload="betolteskor()">
 
-    <div class="container">
+    <div class="container" id="lathatosag">
 
         <div class="display-4 text-center py-5">Balaton Panzió - Szobafoglalás</div>
 
@@ -123,25 +123,28 @@
             </tr>
             <tr>
                 <td>Vendégek száma</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center" id="vendegekszama"></td>
             </tr>
             <tr>
                 <td>Ellátás</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="ellatastipus" class="text-center"></td>
+                <td id="ellatasegyfore" class="text-center"></td>
+                <td id="ellatasosszesen" class="text-center"></td>
             </tr>
             <tr>
                 <td>Fürdő szolgáltatások</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="furdotipus" class="text-center"></td>
+                <td id="furdoegyfore" class="text-center"></td>
+                <td id="furdoosszesen" class="text-center"></td>
             </tr>
         </table>
-
-
+        <p class="text-right">
+            <input type="button" class="btn btn-primary" onclick="window.print()" value="Nyomtatás">
+        </p>
+        
+    
     </div>
 
 </body>
