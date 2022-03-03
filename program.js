@@ -1,3 +1,9 @@
+function betolteskor()
+{
+    document.getElementById("ajanlat").style.display = "none";
+}
+
+
 function kalkulacio() {
     
     // Foglalt napok száma
@@ -100,8 +106,18 @@ var NapokSzama = Elteltido /( 1000 * 3600 * 24 );
         // Egyéb
 
         var egyebek =document.getElementById("egyeb").value;
-
+        
     
 
+        // AJÁNLAT KÉSZÍTÉSE
+
+        document.body.style.backgroundColor="white";
+
+        document.getElementById("ajanlat").style.display = "block";
+
+
+        //szobaár
+
+        document.getElementById("szobaar").innerHTML=SzobarAr + " Ft";
 
 }

@@ -9,7 +9,7 @@
     <title>Balaton Panzió</title>
     <script src="program.js"></script>
 </head>
-<body>
+<body onload="betolteskor()">
 
     <div class="container">
 
@@ -95,11 +95,52 @@
             </table>
 
             <div class="text-center py-5"> 
-            <input type='submit' value="Költségkalkuláció" class="btn btn-primary" onclick="kalkulacio()"> 
-            </div>
+            <input type='button' value="Költségkalkuláció" class="btn btn-primary" onclick="kalkulacio()"> 
+        </div>
 
         </form>
         </div>
+
+    </div>
+
+
+    <div id="ajanlat" class="container">
+
+        <h1 class="text-center" id="ajanlat">Ajánlat</h1>
+
+        <table class="table">
+            <tr class="text-center font-weight-bold">
+                <td class="w-25"></td>
+                <td class="w-25">Megnevezés</td>
+                <td class="w-25">1 főre</td>
+                <td class="w-25">Összesen</td>
+            </tr>
+            <tr>
+                <td>Szoba</td>
+                <td id="szobatipus" class="text-center"></td>
+                <td id="szobaar" class="text-center"></td>
+                <td id="szobaarosszesen" class="text-center"></td>
+            </tr>
+            <tr>
+                <td>Vendégek száma</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ellátás</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Fürdő szolgáltatások</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
 
     </div>
 
